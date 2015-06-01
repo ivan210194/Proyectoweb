@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 select {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -30,9 +29,6 @@ select {
     background-size: 1.5rem 1rem;
     background-position: right center;
   }
-=======
-
->>>>>>> 732f6327b64c532cc7e88f92b537d3f2a45583cd
 
 html, body {
   height: 100%;
@@ -336,11 +332,8 @@ td {
 button{
   font-family: verdana, cursive;
   font-weight: bold;
-<<<<<<< HEAD
   	background-color: #FF9800;
-=======
   	background-color: #8B4513;
->>>>>>> 732f6327b64c532cc7e88f92b537d3f2a45583cd
   	border-radius: 8px;
   	font-family: 'Lato', sans-serif;
   	padding: 5px 15px;

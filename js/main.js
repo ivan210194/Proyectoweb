@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 $(document).ready(function(){
 		$("#buscacategoria").click(function(){
-		$(".buscados").remove();
+		
 		if ($("#campo").val().trim()=="") {
 			window.alert("Introduce Un valor en el Campo de Texto");
 		}else{
@@ -16,7 +15,7 @@ $(document).ready(function(){
 });
 
 		$("#buscarproducto").click(function(){
-			$(".busqueda").remove();
+			
 			if ($("#campo1").val().trim() == ""){
 			window.alert("No Ha Introducido Nada en el Campo de Texto");
     }else{
@@ -24,16 +23,29 @@ $(document).ready(function(){
     	function(data){
     		$.each(json.name,function(index, data){
     			for (var i = 0; i >= 10; i++) {
-    		    div = $("#main").append("<div class='busqueda'><a href='"+data.url+"'><img src='"+data.images[i].url+"'/></a><p>"+data.name+"</p</div");
+    		    div = $("#main").append("<div class='busqueda'><a href='"+data.url+"'><img src='"+data.images[i].url+"'/></a><p>"+data.name+"</p></div>");
     		};		
     		});
     	});	
     		}
 		});
 
+		$("#buscartienda").click(function(){
+			
+			if ($("#campo2").val().trim() == ""){
+			window.alert("No Ha Introducido Nada en el Campo de Texto");
+    }else{
+    	$.getJSON("http://api.remix.bestbuy.com/v1/stores(area("+$("#campo2").val()+"))?format=json&apiKey=td2mtjmpv7gdfevh2c2tkzyq",
+    	function(data){
+    		$.each(json.name,function(index, data){
+    			div = $("#main").append("<div class='busqueda'><p>"+data.city+"</p><p>"+data.name+"</p</div>");	
+    		});
+    	});	
+    		}
+		});
+
+
 
 });
- 
-=======
-jd
->>>>>>> 732f6327b64c532cc7e88f92b537d3f2a45583cd
+
+
