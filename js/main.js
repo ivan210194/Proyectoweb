@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function(){
 		$("#buscacategoria").click(function(){
 		$(".buscados").remove();
@@ -33,3 +34,6 @@ $(document).ready(function(){
 
 });
  
+=======
+jd
+>>>>>>> 732f6327b64c532cc7e88f92b537d3f2a45583cd
